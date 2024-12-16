@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Enhanced Dynamic Image Gallery Manager</title>
-<style>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Enhanced Dynamic Image Gallery Manager</title>
+    <style>
       body {
         font-family: Arial, sans-serif;
         max-width: 1200px;
@@ -88,21 +88,21 @@
       }
     </style>
 
-    <link href="https://freeonlinegame.github.io/thumbs/" rel="canonical"/>
-</head>
-<body>
-<h1>Enhanced Dynamic Image Gallery Manager</h1>
-<div id="controls">
-<input id="searchBox" placeholder="Search images..." type="text"/>
-<select id="sortSelect">
-<option value="name">Sort by Name</option>
-<option value="date">Sort by Date</option>
-<option value="size">Sort by Size</option>
-</select>
-</div>
-<div id="imageContainer"></div>
-<div class="toast" id="toast"></div>
-<script>
+    <link href="https://freeonlinegame.github.io/thumbs/" rel="canonical" />
+  </head>
+  <body>
+    <h1>Enhanced Dynamic Image Gallery Manager</h1>
+    <div id="controls">
+      <input id="searchBox" placeholder="Search images..." type="text" />
+      <select id="sortSelect">
+        <option value="name">Sort by Name</option>
+        <option value="date">Sort by Date</option>
+        <option value="size">Sort by Size</option>
+      </select>
+    </div>
+    <div id="imageContainer"></div>
+    <div class="toast" id="toast"></div>
+    <script>
       let allImages = [];
 
       async function loadImages() {
@@ -202,5 +202,5 @@
         .getElementById("sortSelect")
         .addEventListener("change", sortImages);
     </script>
-</body>
+  </body>
 </html>
